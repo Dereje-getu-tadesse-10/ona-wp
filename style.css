@@ -7,6 +7,11 @@ Template: ona
 Version: 1
 */
 
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Poppins', sans-serif !important;
+}
+
 /* padding header */
 .wp-container-7{
     padding-top: 25px !important;
@@ -114,4 +119,19 @@ h2.has-text-align-left{
 
 .wp-container-15 h2{
     font-weight: 800;
+}
+
+.fa-user-large{
+    margin-top: -10px !important;
+    font-size: 80px !important;
+}
+.state_items{
+    display: flex !important;
+    Justify-content: center !important;
+    align-items: center !important;
+}
+
+.items-description h2{
+    font-weight: 800;
+    font-size: 2em;
 }
