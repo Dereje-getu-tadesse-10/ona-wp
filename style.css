@@ -8,8 +8,9 @@ Version: 1
 */
 
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6, p {
     font-family: 'Poppins', sans-serif !important;
+    margin: 0 !important;
 }
 
 /* padding header */
@@ -121,17 +122,27 @@ h2.has-text-align-left{
     font-weight: 800;
 }
 
+/* container all statisques */
+
+.container_state{
+    display: flex !important;
+}
+
 .fa-user-large{
     margin-top: -10px !important;
-    font-size: 80px !important;
+    font-size: 70px !important;
 }
 .state_items{
     display: flex !important;
     Justify-content: center !important;
     align-items: center !important;
+    gap: 10px !important;
 }
 
 .items-description h2{
     font-weight: 800;
     font-size: 2em;
+    margin: 0 !important;
 }
+
+
