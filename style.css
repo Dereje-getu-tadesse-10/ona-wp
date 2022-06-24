@@ -7,25 +7,111 @@ Template: ona
 Version: 1
 */
 
-header{
-    height: 90px !important;
-}
-
+/* padding header */
 .wp-container-7{
     padding-top: 25px !important;
     padding-right: 4% !important;
     padding-left: 4% !important;
 }
 
-.wp-block-navigation .has-child :where(.wp-block-navigation__submenu-container) {
-    display: flex;
-    flex-direction: row;
-}
-
+/* width navigation */
 .wp-block-navigation .has-child .wp-block-navigation-submenu__toggle[aria-expanded="true"] ~ .wp-block-navigation__submenu-container{
     width: 100%;
 }
 
+
+/* div call to action button*/
 .wp-container-9{
-    
+    display: flex !important;
+    flex-direction: column !important;
+    width: 90% !important;
+    margin: auto !important;
+}
+
+.wp-container-9 > :where(:not(.alignleft):not(.alignright)){
+    max-width: 100% !important;
+    width: 100% !important;
+}
+
+.wp-container-9 .has-text-align-left{
+    font-weight: 800;
+}
+
+h2.has-text-align-left{
+    width: 50%;
+}
+/* end cta */
+
+.wp-block-navigation__responsive-close {
+    width: 500px !important;
+}
+
+/* menu burger open */
+
+.wp-block-navigation:not(.has-background) .wp-block-navigation__responsive-container.is-menu-open {
+    display: flex !important;
+    /* justify-content: center; */
+    align-items: center !important;
+    margin: auto !important;
+}
+
+
+
+.wp-block-navigation__responsive-container.is-menu-open .wp-block-navigation__responsive-container-content {
+    display: flex !important;
+    flex-direction: row !important;
+    width: 70% !important;
+    text-align: center !important;
+    margin: auto !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
+
+/* ul lists center */
+
+.wp-block-navigation__container .wp-block-navigation-submenu{
+    margin: auto !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+}
+
+/* li center */
+
+.wp-block-navigation__submenu-container{
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: center !important;
+}
+
+/* end navigation */
+
+/* presentation block */
+.wp-container-14 {
+    width: 90% !important;
+    margin: 35px auto !important;
+}
+.wp-container-14 h2{
+    font-weight: 800;
+}
+
+/* images prestation & contact */
+.wp-container-13{
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    margin: 35px auto !important;
+    cursor: pointer !important;
+}
+
+/* nos chiffres clés */
+
+.wp-container-15{
+    width: 90% !important;
+    margin: 35px auto !important;
+}
+
+.wp-container-15 h2{
+    font-weight: 800;
 }
