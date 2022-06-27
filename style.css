@@ -7,142 +7,95 @@ Template: ona
 Version: 1
 */
 
+/* modal-2-content */
 
 h1, h2, h3, h4, h5, h6, p {
     font-family: 'Poppins', sans-serif !important;
     margin: 0 !important;
 }
-
-/* padding header */
-.wp-container-7{
-    padding-top: 25px !important;
-    padding-right: 4% !important;
-    padding-left: 4% !important;
+/* header + nav */
+header{
+    width: 90%;
+    margin: auto;
 }
 
-/* width navigation */
-.wp-block-navigation .has-child .wp-block-navigation-submenu__toggle[aria-expanded="true"] ~ .wp-block-navigation__submenu-container{
-    width: 100%;
+.wp-container-5{
+    display: flex;
+    justify-content: center;
+    height: 90px;
+    margin-bottom: 0;
 }
 
-
-/* div call to action button*/
-.wp-container-9{
-    display: flex !important;
-    flex-direction: column !important;
-    width: 90% !important;
-    margin: auto !important;
+.wp-container-5, .wp-container-1{
+    display: flex;
+    align-items: center;
 }
 
-.wp-container-9 > :where(:not(.alignleft):not(.alignright)){
-    max-width: 100% !important;
-    width: 100% !important;
+.wp-container-5 .wp-container-4{
+    display: flex;
+    justify-content: flex-end;
 }
-
-.wp-container-9 .has-text-align-left{
-    font-weight: 800;
-}
-
-h2.has-text-align-left{
-    width: 50%;
-}
-/* end cta */
-
-.wp-block-navigation__responsive-close {
-    width: 500px !important;
-}
-
-/* menu burger open */
-
-.wp-block-navigation:not(.has-background) .wp-block-navigation__responsive-container.is-menu-open {
-    display: flex !important;
-    /* justify-content: center; */
-    align-items: center !important;
-    margin: auto !important;
-}
-
-
-
-.wp-block-navigation__responsive-container.is-menu-open .wp-block-navigation__responsive-container-content {
-    display: flex !important;
-    flex-direction: row !important;
-    width: 70% !important;
-    text-align: center !important;
-    margin: auto !important;
-    align-items: center !important;
-    justify-content: center !important;
-}
-
-/* ul lists center */
-
-.wp-block-navigation__container .wp-block-navigation-submenu{
-    margin: auto !important;
-    display: flex !important;
-    justify-content: center !important;
-    align-items: center !important;
-}
-
-/* li center */
 
 .wp-block-navigation__submenu-container{
-    display: flex !important;
-    flex-direction: column !important;
-    justify-content: center !important;
-    align-items: center !important;
+    display: flex;
+    flex-direction: row !important;
 }
 
-/* end navigation */
+@media only screen and (max-width: 781px) {
+    .wp-container-5 .wp-container-4{
+        margin-top: -85px;
+    }
+    .wp-container-1{
+        margin-top: 20px !important;
+    }
+}
 
-/* presentation block */
-.wp-container-14 {
+/* end */
+
+/* modal nav */
+@media only screen and (max-width: 781px){
+    .wp-block-navigation__submenu-container{
+        flex-direction: column !important;
+        gap: 20px !important;
+    }
+    .wp-block-navigation__container{
+        display: flex;
+        margin: auto;
+    }
+    .wp-block-navigation-item__label{
+        font-weight: bold !important;
+    }
+}
+/* end */
+
+/* cta */
+
+.wp-block-cover__inner-container{
     width: 90% !important;
-    margin: 35px auto !important;
-}
-.wp-container-14 h2{
-    font-weight: 800;
 }
 
-/* images prestation & contact */
-.wp-container-13{
-    display: flex !important;
-    justify-content: center !important;
-    align-items: center !important;
-    margin: 35px auto !important;
-    cursor: pointer !important;
+.wp-container-7 {
+    width: 100% !important;
+    font-weight: bold !important;
+    font-size: 1.5rem !important;
+    color: white !important;
 }
 
-/* nos chiffres clés */
+.wp-container-7 > :where(:not(.alignleft):not(.alignright)){
+    max-width: unset !important;
+}
 
-.wp-container-15{
+.wp-container-7 p{
+    display: flex;
+}
+
+/* end */
+
+/* présentation */
+
+.wp-container-9{
     width: 90% !important;
-    margin: 35px auto !important;
+    margin: auto !important;
 }
 
-.wp-container-15 h2{
-    font-weight: 800;
-}
-
-/* container all statisques */
-
-.container_state{
-    display: flex !important;
-}
-
-.fa-user-large{
-    margin-top: -10px !important;
-    font-size: 70px !important;
-}
-.state_items{
-    display: flex !important;
-    Justify-content: center !important;
-    align-items: center !important;
-    gap: 10px !important;
-}
-
-.items-description h2{
-    font-weight: 800;
-    font-size: 2em;
-    margin: 0 !important;
-}
-
-
+/* end */
