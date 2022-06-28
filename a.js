@@ -24,12 +24,26 @@ const t = () => {
     });
 }
 t();
+
 const i = () => {
-    console.log(y);
     const e = document.querySelector('.wp-container-1');
     const f = document.querySelector('.wp-container-4');
     const s = document.querySelector('.wp-container-6');
     const g = document.querySelector('.wp-container-9');
     const a = document.querySelector('.wp-container-12');
 
+    let i = [e, f, s, g, a];
+ 
+    i.forEach(el => {
+        gsap.from(el, {
+            duration: 3,
+            opacity: 0,
+            y: -100,
+            ease: "power3.out",
+            stagger: {
+                amount: 5.5
+            }
+        });
+    })
 }
+i();
