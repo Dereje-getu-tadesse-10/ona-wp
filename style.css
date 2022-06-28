@@ -9,6 +9,10 @@ Version: 1
 
 /* modal-2-content */
 
+:root{
+    --logo-color: #1065ff;
+}
+
 h1, h2, h3, h4, h5, h6, p {
     font-family: 'Poppins', sans-serif !important;
     margin: 0 !important;
@@ -95,7 +99,180 @@ header{
 
 .wp-container-9{
     width: 90% !important;
-    margin: auto !important;
+    margin: 50px auto !important;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.wp-container-9 h2{
+    font-weight: bold;
+    font-size: 2em;
+}
+
+.wp-container-9 p{
+    padding-top: 10px;
+}
+
+.wp-container-13{
+    width: 90% !important;
+    margin: 50px auto !important;
+}
+
+.wp-container-10,
+.wp-container-11{
+    cursor: pointer;
 }
 
 /* end */
+
+/* stats */
+.wp-container-14 h2{
+    font-weight: bold;
+    font-size: 2em;
+}
+/* .wp-container-15 {
+    height: 400px;
+} */
+
+.container-stats{
+    display: flex;
+
+}
+
+.wp-container-14{
+    display: flex;
+    justify-content: center;
+    height: 400px !important;
+    flex-direction: column;
+}
+
+.wp-container-16{
+    width: 90%;
+    margin: auto;
+}
+
+.container-stats{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 90%;
+}
+
+.stats-container{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.bold{
+    font-size: 1.7em;
+    font-weight: bold;
+}
+
+.fa-solid{
+    font-size: 3em;
+}
+
+.container-stats.cnt-2{
+    margin-top: 50px;
+}
+
+.container-stats:not(.cnt-2){
+    margin-top: 50px;
+}
+
+@media only screen and (max-width:380px){
+    .container-stats{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+}
+
+/* end */
+
+/* footer */
+
+footer{
+    width: 90%;
+    margin: auto;
+    padding: unset;
+}
+
+.wp-container-17{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.wp-container-17 p {
+    font-weight: bold;
+}
+
+.wp-container-17 h3{
+    font-weight: bold;
+}
+
+.wp-container-19{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: 0;
+}
+
+.wp-container-19  h3{
+    font-weight: bold;
+}
+
+.wp-container-19 a{
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.wp-container-20{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100% !important;
+}
+.wp-container-18{
+    display: none !important;
+}
+
+@media (min-width: 782px){
+    .wp-block-columns:not(.is-not-stacked-on-mobile) > .wp-block-column[style*="flex-basis"]{
+        flex-basis: unset;
+    }
+
+}
+
+@media (min-width: 781px){
+    .wp-container-19{
+        margin: unset !important;
+    }
+}
+
+/* end */
+
+/* main container */
+
+@media (min-width: 1150px){
+    header,
+    .wp-block-cover__inner-container,
+    .wp-container-9,
+    .wp-container-13,
+    .wp-container-14,
+    .wp-container-16,
+    footer{
+        width:80% !important;
+        margin: auto;
+        padding: unset !important;
+    }
+    .container-stats{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+}
