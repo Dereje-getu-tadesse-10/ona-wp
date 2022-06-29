@@ -11,6 +11,7 @@ Version: 1
 
 :root{
     --logo-color: #1065ff;
+    --grey-color: #616161;
 }
 
 h1, h2, h3, h4, h5, h6, p {
@@ -227,8 +228,10 @@ footer{
 }
 
 .wp-container-19 a{
+    font-size: 1.2em;
     font-weight: bold;
     text-decoration: none;
+    color: var(--grey-color);
 }
 
 .wp-container-20{
@@ -275,4 +278,50 @@ footer{
         justify-content: space-between;
         width: 100%;
     }
+    .wp-container-20{
+        margin-left: 0;
+    }
+    .wp-container-23 > :where(:not(.alignleft):not(.alignright)){
+        max-width: unset !important;
+        margin-left: unset !important;
+    }
+    
+}
+
+/* page client */
+
+.wp-container-6.wp-block-group{
+    width: 80% !important;
+    margin: 15px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.wp-container-6 h2.has-text-align-center{
+    font-weight: bold !important;
+}
+
+/* map + contact */
+
+.wp-container-6.wp-block-column{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wpcf7-form.init{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+textarea{
+    height: 200px;
+}
+
+label{
+    font-size: 12px;
 }

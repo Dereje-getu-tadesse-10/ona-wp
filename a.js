@@ -1,11 +1,3 @@
-
-
-// window.addEventListener("load", () => {
-//     setTimeout(t, 2000);
-
-//     i(g)
-// })
-
 const t = () => {
     const i = Array.from(document.querySelectorAll('.stats-container'));
     i.forEach(el => { 
@@ -18,7 +10,7 @@ const t = () => {
         for (let i = 0; i < val; i++) {
             setTimeout(() => {
                 el.children[1].children[1].previousElementSibling.firstChild.data = i +1;
-            }, i * 10);
+            }, i * 50);
         }
 
     });
@@ -26,17 +18,15 @@ const t = () => {
 t();
 
 const i = () => {
-    const e = document.querySelector('.wp-container-1');
-    const f = document.querySelector('.wp-container-4');
-    const s = document.querySelector('.wp-container-6');
     const g = document.querySelector('.wp-container-9');
+    const h = document.querySelector('.wp-container-7');
     const a = document.querySelector('.wp-container-12');
 
-    let i = [e, f, s, g, a];
+    let i = [ h, g, a];
  
     i.forEach(el => {
         gsap.from(el, {
-            duration: 3,
+            duration: 2,
             opacity: 0,
             y: -100,
             ease: "power3.out",
@@ -45,5 +35,7 @@ const i = () => {
             }
         });
     })
+
 }
-i();
+// i();
+
